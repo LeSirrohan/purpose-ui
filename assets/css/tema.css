@@ -1,0 +1,42 @@
+#paralelogramo {
+    z-index: 0;
+    width: 700px; 
+    height: 200px;     
+    background: linear-gradient(to bottom right, #53f,
+     #25ddf5);
+    -webkit-transform: skewY(-20deg); 
+    -moz-transform: skewY(-30deg); 
+    -o-transform: skewY(-30deg); 
+    position: relative;
+    top: -150px;
+    left: 0px;
+ }
+ .triangulo {
+    z-index:0 ; 
+	border-top: 150px solid transparent;
+	border-left: 500px solid #232323;
+	border-bottom: 0px solid transparent;
+    position: relative;
+    top: 25px;
+    width: 600px;   
+}
+.triangulo2 {
+    z-index: 0;
+   border-top: 300px solid transparent;
+   border-right: 700px solid #232323;
+   border-bottom: 0px solid transparent;
+   position: relative;
+   top: 25px;;
+   right: -200px;
+   width: 600px;   
+}
+#triangulo3 {
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid #f0ad4e;
+    border-left: 100px solid #f0ad4e;
+    border-bottom: 100px solid transparent;
+    position: relative;
+}
