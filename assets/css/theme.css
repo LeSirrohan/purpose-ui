@@ -95,7 +95,7 @@ body
     text-align: left;
 
     color: #495057;
-    background-color: #fff;
+    background-color: #494949;
 }
 
 [tabindex='-1']:focus
@@ -5111,6 +5111,7 @@ input[type='button'].btn-block
 .navbar-toggler-icon
 {
     display: inline-block;
+    color:
 
     width: 1.5em;
     height: 1.5em;
@@ -7694,7 +7695,21 @@ button.bg-dark:focus
 }
 .bg-stripes
 {
-    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%) !important;
+    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#327aff 94%) !important;
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-stripes2
+{
+    background: linear-gradient(90deg,#53f 20%,#3476fd 50%,#0ec4ff 98%) !important;
+
 }
 a.bg-stripes:hover,
 a.bg-stripes:focus,
@@ -12221,7 +12236,7 @@ body
     overflow-x: hidden; 
 
     color: #495057;
-    background-color: #fff;
+    background-color: #494949;
 }
 
 iframe

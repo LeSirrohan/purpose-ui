@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Webpixels">
-    <title>Purpose UI Kit - Professional Website UI Kit by Webpixels</title>
+    <title>Factura en Una</title>
     <!-- Favicon -->
     <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
     <!-- Fonts -->
@@ -18,20 +18,17 @@
 </head>
 
 <body>
-        <div id="stripes" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     <header>
          
-        <nav class="navbar navbar-expand-lg navbar-transparent" id="navbar_main">
+        <nav class="bg-stripes2 navbar navbar-expand-lg navbar-transparent" id="navbar_main">
             <div class="container">
-                <a class="navbar-brand mr-lg-5" href="./index.html"><strong>Factura</strong>EnUna </a>
+                <a class="navbar-brand mr-lg-5" href="./index.html"><strong>Factura</strong>enUna </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_main_collapse" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    
+                        <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" class="btn btn-white btn-circle btn-translate--hover">
+                            <span class="btn-inner--icon"><i class="fas fa-user"></i></span>
+                            <span class="btn-inner--text" id="sesion_bgn">Iniciar Sesi&oacute;n</span>
+                        </a><span class="navbar-toggler-icon" style="margin-left: 30px;"><i class="fa fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar_main_collapse">
                     <ul class="navbar-nav align-items-lg-center">
@@ -42,23 +39,24 @@
                             <a class="nav-link btn-translate--hover mt-0 scroll-me" href="#obligado" role="button">Est&aacute;s obligado?</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                        
+                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">                        
                     </ul>
-                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                        
+                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">                        
                         <li class="nav-item">
                             <a class="nav-link btn-translate--hover" href="#contact_form">Cont&aacute;ctenos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-translate--hover" href="./pages/contact.html">Consultar</a>
                         </li>
-                        <li class="nav-item mr-0">
-                            <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" class="nav-link d-lg-none">Mire</a>
-                            <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" class="btn btn-white btn-circle btn-translate--hover">
+                        <li class="nav-item mr-0" data-toggle="collapse" data-target="#navbar_main_collapse" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+                            <a id="btn_max" href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" class="btn btn-white btn-circle btn-translate--hover" id="boton_inicio_sesion">
                                 <span class="btn-inner--icon"><i class="fas fa-user"></i></span>
-                                <span class="btn-inner--text">Iniciar Sesi&oacute;n</span>
+                                <span class="btn-inner--text"><span >Iniciar Sesi&oacute;n</span></span>
                             </a>
+                        </li>
+                        <li id="btn_min">
+                            <a class="nav-link btn-translate--hover" href="./pages/contact.html"><i class="fas fa-user"></i>&nbsp;Iniciar Sesión</a>
+
                         </li>
                     </ul>
                 </div>
@@ -68,10 +66,12 @@
     <main>
         <!-- Spotlight -->
         <section class="bg-stripes bg-cover bg-lg-cover bg-size--cover">
-            <div  id="paralelogramo">
+                <br>
+                <br>
+                <!-- <div  id="paralelogramo">
 
             </div>
-            <!--<svg width="100%" style="height: 200" viewBox="0 0 -100 100">
+            <svg width="100%" style="height: 200" viewBox="0 0 -100 100">
                 <defs>
                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" style="stop-color:#53f;stop-opacity:1" />
@@ -142,14 +142,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!--
             <span class="triangulo">
 
                
             </span>
             <span class="triangulo2">
 
-            </span>
+            </span>-->
         </section>
         <!-- Cuerpo2-->
         <section class="slice slice-lg bg-white" data-separator="rounded-right" data-separator-orientation="bottom">
@@ -508,6 +508,7 @@
     <script src="./assets/vendor/swiper/js/swiper.min.js"></script>
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
+    <script src="./assets/js/feu.js"></script>
 </body>
 
 </html>
