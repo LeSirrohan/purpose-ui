@@ -59,6 +59,7 @@
 #seccion1
 {
     background: linear-gradient(to bottom right, #53f, #25ddf5);
+    height: 0; 
 
     /* Full height */
     height: 100%; 

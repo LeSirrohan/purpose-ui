@@ -1,0 +1,13 @@
+.parallax {
+    /* The image used */
+    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#327aff 94%) !important;
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -7696,6 +7696,7 @@ button.bg-dark:focus
 .bg-stripes
 {
     background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#327aff 94%) !important;
+    height: 0; 
 
     /* Full height */
     height: 100%; 
@@ -7709,6 +7710,11 @@ button.bg-dark:focus
 .bg-stripes2
 {
     background: linear-gradient(90deg,#53f 20%,#3476fd 50%,#0ec4ff 98%) !important;
+
+}
+.bg-stripes3
+{
+    background: linear-gradient(90deg,#53f 70%,#4454ff 97%) !important
 
 }
 a.bg-stripes:hover,
