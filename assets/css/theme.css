@@ -3298,6 +3298,47 @@ fieldset:disabled a.btn
     box-shadow: none, 0 0 0 0 rgba(5, 23, 42, .5);
 }
 
+.btn-colores
+{
+    color: #fff;
+    border-color: #327aff;
+    background-color: #327aff;
+    box-shadow: none;
+}
+.btn-colores:hover
+{
+    color: black;
+    border-color: #0ec4ff;
+    background-color: #0ec4ff;
+    box-shadow: 0 0 15px rgba(5, 23, 42, .35);
+}
+.btn-colores:focus,
+.btn-colores.focus
+{
+    box-shadow: none, 0 0 0 0 rgba(5, 23, 42, .5);
+}
+.btn-colores.disabled,
+.btn-colores:disabled
+{
+    color: #fff;
+    border-color: #327aff; 
+    background-color: #327aff;
+}
+.btn-colores:not(:disabled):not(.disabled):active,
+.btn-colores:not(:disabled):not(.disabled).active,
+.show > .btn-colores.dropdown-toggle
+{
+    color: #fff;
+    border-color: black; 
+    background-color: black;
+}
+.btn-colores:not(:disabled):not(.disabled):active:focus,
+.btn-colores:not(:disabled):not(.disabled).active:focus,
+.show > .btn-colores.dropdown-toggle:focus
+{
+    box-shadow: none, 0 0 0 0 rgba(5, 23, 42, .5);
+}
+
 .btn-white
 {
     color: #212529;
@@ -7693,7 +7734,7 @@ button.bg-dark:focus
 }
 .bg-stripes
 {
-    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#327aff 94%) !important;
+    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 97%) !important;
     height: 0; 
 
     /* Full height */
@@ -7707,7 +7748,7 @@ button.bg-dark:focus
 }
 .bg-stripes2
 {
-    background: linear-gradient(90deg,#53f 20%,#3476fd 50%,#0ec4ff 98%) !important;
+    background: linear-gradient(90deg,#53f 20%,#4356ff 50%,#1da6ff 98%) !important
 
 }
 .bg-stripes3
@@ -12182,6 +12223,9 @@ a.text-darker:focus
     .navbar
     {
         display: none;
+        position: fixed; /* Set the navbar to fixed position */
+        bottom: 0; /* Position the navbar at the bottom of the page */
+        width: 100%; /* Full width */
     }
     .badge
     {
@@ -13272,7 +13316,7 @@ button.bg-lighter:focus
     }
     [data-separator='rounded-right'][data-separator-orientation='bottom']
     {
-        border-radius: 0 0 3rem 0;
+        border-radius: 0 0 0 0;
     }
     [data-separator='rounded-right'][data-separator-orientation='top']
     {
@@ -13300,7 +13344,7 @@ button.bg-lighter:focus
     }
     [data-separator='rounded-right'][data-separator-orientation='bottom']
     {
-        border-radius: 0 0 5rem 0;
+        border-radius: 0 0 0 0;
     }
     [data-separator='rounded-right'][data-separator-orientation='top']
     {

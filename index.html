@@ -19,11 +19,12 @@
     <!-- Theme CSS -->
     <link type="text/css" href="./assets/css/theme.css" rel="stylesheet">
     <link type="text/css" href="./assets/css/tema.css" rel="stylesheet">
+    <link type="text/css" href="./assets/css/strp.css" rel="stylesheet">
+    <link type="text/css" href="./assets/css/index.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-         
         <nav class="bg-stripes2 navbar navbar-expand-lg navbar-transparent" id="navbar_main">
             <div class="container">
                 <a class="navbar-brand mr-lg-5" href="./index.html"><strong>Factura</strong>enUna </a>
@@ -33,30 +34,29 @@
                 <div class="collapse navbar-collapse" id="navbar_main_collapse">
                     <ul class="navbar-nav align-items-lg-center">
                         <li class="nav-item ">
-                            <a class="nav-link" href="./index.html">C&oacute;mo adquirirlo?</a>
+                            <a class="nav-link btn-translate--hover" href="./index.html">C&oacute;mo adquirirlo?</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-translate--hover mt-0 scroll-me" href="#obligado" role="button">Est&aacute;s obligado?</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">                        
+                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                     </ul>
-                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">                        
+                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                         <li class="nav-item">
                             <a class="nav-link btn-translate--hover" href="./contacto.html">Cont&aacute;ctenos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-translate--hover" href="./pages/contact.html">Consultar</a>
+                            <a class="nav-link btn-translate--hover" href="http://facturaenuna.com/portal">Consultar</a>
                         </li>
                         <li id="sesion_bgn" class="nav-item mr-0" data-toggle="collapse" data-target="#navbar_main_collapse" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
-                            <a id="btn_max" href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" class="btn btn-white btn-circle btn-translate--hover" id="boton_inicio_sesion">
+                            <a id="btn_max" href="http://facturaenuna.com/fe" class="common-Button" id="boton_inicio_sesion">
                                 <span class="btn-inner--icon"><i class="fas fa-user"></i></span>
                                 <span class="btn-inner--text"><span >Iniciar Sesi&oacute;n</span></span>
                             </a>
                         </li>
                         <li id="btn_min">
-                            <a class="nav-link btn-translate--hover" href="./pages/contact.html"><i class="fas fa-user"></i>&nbsp;Iniciar Sesión</a>
-
+                            <a class="nav-link btn-translate--hover" href="http://facturaenuna.com/fe"><i class="fas fa-user"></i>&nbsp;Iniciar Sesión</a>
                         </li>
                     </ul>
                 </div>
@@ -65,22 +65,25 @@
     </header>
     <main>
     <!-- Spotlight -->
-    <section class="bg-stripes bg-cover bg-lg-cover bg-size--cover">
-        <div class="container"  id="slider1">
+    <section class="bg-stripes bg-cover bg-lg-cover bg-size--cover centrado_vertical" id="seccion1">
+            <!--<div  class="triangulo">
+
+                </div>-->
+        <div class="container" id="slider1">
             
-            <div class="row row-grid justify-content-around">
+            <div class="row row-grid justify-content-around" style="display: flex;justify-content: center;align-items: center;">
                 
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="pt-lg-md pb-lg-md text-center text-lg-left">
-                        <h2 class="heading h1 text-white mb-3">Descubre. ¡Da un paso adelante!</h2>
+                        <h2 class="heading h1 text-white mb-3">Descubre. Da un paso adelante.</h2>
                         <p class="lead lh-180 text-white">Estás en buenas manos.Todo lo que necesitas para cumplir con SUNAT, sin moverte de tu oficina.</p>
                         <div class="mt-5">
-                            <a href="#" class="btn btn-info btn-circle btn-translate--hover mr-4" style="z-index:2">Prueba gratis!</a>
-                            <a href="#" class="btn btn-white btn-circle btn-translate--hover" style="z-index:2">Pide tu demo!</a>
+                            <a href="#" class="common1-Button21">PRUEBA GRATIS</a>
+                            <a href="#" class="common-Button">CONTACTA AL EQUIPO DE VENTAS</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <div class="frame-laptop swiper-js-container">
                         <img src="./assets/img/spotlight/macbook.svg" class="img-fluid">
                         <div class="frame-inner">
@@ -111,25 +114,93 @@
 
         </span>-->
     </section>
+    
     <!-- Cuerpo2-->
-    <section class="slice slice-lg bg-white" data-separator="rounded-right" data-separator-orientation="bottom">
+    <section class="bg-white centrado_vertical" data-separator="rounded-right" data-separator-orientation="bottom" id="seccion2">
+            <div class="container">
+                <div class="row row-grid">
+                    <div class="col-lg-3">
+                        <div class="card shadow--hover">
+                            <div class="px-4 pb-5 text-center">
+                                <h3 class="h4">PREPARADO PARA EL PRESENTE Y EL FUTURO
+                                    </h3>
+                                <p class="mt-2">
+                                        Integra las tecnologías más modernas con una plataforma innovadora que mejora constantemente e incorpora nuevas funciones cada semana. Nos adaptamos a tus necesidades a medida que crece tu negocio y evoluciona la industria.
+    
+                                    </p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+    <!-- Features-->
+    <section class="bg-secondary centrado_vertical" id="seccion3">
         <div class="container">
-            <div class="row row-grid">
-                <div class="col-lg-6">
-                    <div class="card shadow--hover">
-                        <div class="px-4 pb-5 text-center">
-                            <h3 class="h4">PREPARADO PARA EL PRESENTE Y EL FUTURO</h3>
-                            <p class="mt-2">
-                                    Integra las tecnologías más modernas con una plataforma innovadora que mejora constantemente e incorpora nuevas funciones cada semana. Nos adaptamos a tus necesidades a medida que crece tu negocio y evoluciona la industria.</p>
+            <div class="mb-1  text-center">
+                <h3 class="h2 text-black ">Todo en 5 pasos. Rápido, sencillo, sin complicaciones:</h3>
+            </div>
+            <div class="row row-grid align-items-center ">
+                <div class="col-lg-12 ">
+                    <div class="d-flex align-items-start mb-2 ">
+                        <div class="pr-4 ">
+                            <div class="icon icon-shape bg-black text-primary box-shadow-3 rounded-circle ">
+                            <i class="fas fa-credit-card"></i>
+                            </div>
+                        </div>
+                        <div class="icon-text ">
+                            <h5 class="h5 text-black ">Realiza el pago y envíanos la constancia a info@facturaenuna.pe. </h5>
+                            <p class="mb-0 text-black ">Te informaremos a más tardar en 24 horas que la operación se realizó con exito.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-2 ">
+                        <div class="pr-4 ">
+                            <div class="icon icon-shape bg-black text-primary box-shadow-3 rounded-circle ">
+                            <i class="fas fa-bullhorn  "></i>
+                            </div>
+                        </div>
+                        <div class="icon-text ">
+                            <h5 class="h5 text-black ">Debes informar a SUNAT que somos tus Proveedores de Servicios Electrónicos (PSE).</h5>
+                            <p class="mb-0 text-black ">Sigue los pasos que te indicamos <a href="#" style="color:blue !important">aquí</a></p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-2 ">
+                        <div class="pr-4 ">
+                            <div class="icon icon-shape bg-black text-primary box-shadow-3 rounded-circle ">
+                            <i class="fas fa-envelope "></i>
+                            </div>
+                        </div>
+                        <div class="icon-text ">
+                            <p class="mb-0 text-black ">Enviános a <a href="#" style="color:blue !important"> hola@facturaenuna.pe</a>, el RUC de tu empresa, nombres completos, teléfono y correo de la persona de contacto.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-2">
+                        <div class="pr-4 ">
+                            <div class="icon icon-shape bg-black text-primary box-shadow-3 rounded-circle ">
+                            <i class="far fa-id-card"></i>
+                            </div>
+                        </div>
+                        <div class="icon-text ">
+                            <p class="mb-0 text-black ">FacturaenUna te enviará un correo con el usuario, la contraseña y la ruta de acceso.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-2 ">
+                        <div class="pr-4 ">
+                            <div class="icon icon-shape bg-black text-primary box-shadow-3 rounded-circle ">
+                            <i class="fas fa-envelope-square "></i>
+                            </div>
+                        </div>
+                        <div class="icon-text ">
+                            <h5 class="h5 text-black ">Debes ingresar a FacturaenUna y completar la información solicitada.</h5>
+                            <p class="mb-0 text-black ">Datos de tu empresa, cargar el logo en formato "PNG", seleccionar el modelo de representación impresa.</p>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
-    </section>
+        </section>
     
-    <!-- Features-->
+    <!-- Features
     <section class="slice slice-lg bg-stripes2">
         <div class="container ">
             <div class="mb-md text-center ">
@@ -214,10 +285,10 @@
             </div>
             </div>
         </div>
-        </section>
+        </section>-->
             
     
-    <!-- Testimoniales -->
+    <!-- Testimoniales
     <section class="slice slice-lg">
         <div class="container">
             <div class="row row-grid">
@@ -268,12 +339,15 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Obligado -->
-    <section class="slice slice-lg bg-secondary" id="obligado">
-        <div class="container">
-            <div class="mb-md text-center">
+    <section class="bg-white centrado_vertical" id="obligado">
+        <div class="container" style="
+        display: flex;
+        justify-content: center;
+        align-items: center;">
+            <div class="mb-md text-center" >
                 <h3>Conoce si est&aacute;s obligado</h3>
                 <div class="fluid-paragraph text-center mt-3">
                     <div class="input-group mb-3">
@@ -291,99 +365,21 @@
 
         </div>
     </section>
-        <!-- Obligado -->
-        <section class="slice slice-lg bg-white" id="obligado">
-            <div class="container">
-                <div class="mb-md text-center">
-                    <h3>PREPARADO PARA EL PRESENTE Y EL FUTURO
-                        </h3>
-                    <div class="fluid-paragraph mt-3">
-                            ntegra las tecnologías más modernas con una plataforma innovadora que mejora constantemente e incorpora nuevas funciones cada semana. Nos adaptamos a tus necesidades a medida que crece tu negocio y evoluciona la industria.
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- Obligado -->
-        <section class="slice slice-lg bg-white" id="obligado">
-                <div class="container">
-                    <div class="mb-md text-center">
-                        <h3>CRECE MÁS RÁPIDO
-
-                            </h3>
-                        <div class="fluid-paragraph mt-3">
-                            Aumenta tus ingresos con opciones de pago diseñadas para llegar a clientes de todo el mundo, optimizar la conversión durante el proceso de compra y aumentar los índices de optimización sin la necesidad de hacer nada por tu parte.
-
-                        </div>
-                    </div>
-    
-                </div>
-            </section>
-        <!-- Contactenos-->
-        <section id="contact_form" class="slice slice-lg" data-delimiter-before="1">
-            <div class="container">
-                <div class="row row-grid align-items-center">
-                    <div class="col-lg-6">
-                        <h3>Contactenos</h3>
-                        <p class="lead">If there's something we can help you with, jut let us know. We'll be more than happy to offer you our help</p>
-                        <form class="mt-5" role="form">
-                            <div class="form-group">
-                                <label class="sr-only">Your name</label>
-                                <input class="form-control form-control-lg" placeholder="Your name" type="text">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only">Email address</label>
-                                <input class="form-control form-control-lg" placeholder="Email address" type="text">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only">Type your message</label>
-                                <textarea class="form-control form-control-lg" rows="5" placeholder="Type your message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-dark btn-circle mt-4">Send message</button>
-                        </form>
-                    </div>
-                    <div class="col-lg-5 ml-lg-auto">
-                        <h3>150 Southeast Pidgeon Meadow<br>
-                  Claflin Terrace, 305458</h3>
-                        <p class="lead my-4">E: <a href="#">support@webpixels.io</a>
-                            <br>T: 0755.222.333</p>
-                        <p>Purpose is a complete responsive HTML5 Template based on Bootstrap 4 made for Agency, Startup, Business, Finance, Consulting, Real Estate, Recruitment, Travel website and not only.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to action -->
-        <!--
-        <section class="slice slice-lg bg-secondary">
-            <span class="tongue tongue-top"><i class="fas fa-angle-up"></i></span>
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-8 text-center">
-                        <h3 class="h3 font-weight-400">I am ready to start a new project with <span class="font-weight-700">Purpose</span> UI Kit.</h3>
-                        <div class="mt-5">
-                            <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-primary btn-circle btn-translate--hover px-4">Purchase now<span class="badge badge-pill badge-danger">$49 USD</span></a>
-                            <a href="mailto:support@webpixels.io?subject=Purpose Website UI Kit - You issue here ." class="btn btn-link">Have an issue?</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+       
     </main>
     <footer class="footer py-5  footer-dark">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="pr-lg-4">
-                        <h5 class="heading h6 text-uppercase font-weight-700 mb-3">Contact</h5>
+                        <h5 class="heading h6 text-uppercase font-weight-700 mb-3">Contacto</h5>
                         <ul class="list-unstyled text-small">
                             <li class="d-flex py-2">
                                 <div>
                                     <i class="fas fa-map-marker"></i>
                                 </div>
                                 <div>
-                                    <span class="pl-3 d-inline-block">Webpixels Studios<br>
-                      150 Southeast Pidgeon Meadow Claflin Terrace, San Francisco, US</span>
+                                    <span class="pl-3 d-inline-block">Tax Technology S.A.C.</span>
                                 </div>
                             </li>
                             <li class="d-flex py-2">
@@ -391,7 +387,7 @@
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div>
-                                    <span class="pl-3 d-inline-block">+40 - 0755.222.333</span>
+                                    <span class="pl-3 d-inline-block">T: +91 993 501 853</span>
                                 </div>
                             </li>
                             <li class="d-flex py-2">
@@ -399,7 +395,20 @@
                                     <i class="fas fa-envelope-open"></i>
                                 </div>
                                 <div>
-                                    <span class="pl-3 d-inline-block">support@webpixels.io</span>
+                                    <span class="pl-3 d-inline-block">E: <a href="#contact" style="color:blue !important">hola@facturaenuna.com</a>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="d-flex py-2">
+                                <div>
+                                    <i class="fas fa-address-card"></i>
+                                </div>
+                                <div>
+                                    <span class="pl-3 d-inline-block">
+                                        <p>Av. Paseo de la República 5663 <br>
+                                        Miraflores, Lima <br>
+                                        Perú</p></a>
+                                    </span>
                                 </div>
                             </li>
                         </ul>

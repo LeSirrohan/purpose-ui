@@ -2,28 +2,31 @@
 {
     #paralelogramo 
     {
-        z-index: 0;
+        z-index: 3;
         width: 700px; 
         height: 200px;     
-        background: linear-gradient(to bottom right, #53f, #25ddf5);
+        background: #53f;
         -webkit-transform: skewY(-20deg); 
         -moz-transform: skewY(-30deg); 
         -o-transform: skewY(-30deg); 
-        position: relative;
+        position: fixed;
         top: -150px;
         left: 0px;
     }
 }
-.triangulo {
-    z-index:0 ; 
-	border-top: 150px solid transparent;
-	border-left: 500px solid #232323;
-	border-bottom: 0px solid transparent;
+.triangulo 
+{
+    z-index:100 ; 
+	border-top: 0px solid transparent;
+	border-left: 500px solid #4553ff;
+	border-bottom: 150px solid transparent;
     position: relative;
     top: 25px;
+    left: 25%;
     width: 600px;   
 }
-.triangulo2 {
+.triangulo2 
+{
     z-index: 0;
    border-top: 300px solid transparent;
    border-right: 700px solid #232323;
@@ -33,7 +36,8 @@
    right: -200px;
    width: 600px;   
 }
-#triangulo3 {
+#triangulo3 
+{
     z-index: 0;
     width: 0;
     height: 0;
@@ -43,7 +47,8 @@
     border-bottom: 100px solid transparent;
     position: relative;
 }
-.parallax {
+.parallax 
+{
     /* The image used */
     background-image: url('img_parallax.jpg');
 
@@ -59,14 +64,16 @@
 #seccion1
 {
     background: linear-gradient(to bottom right, #53f, #25ddf5);
-    height: 0; 
-
-    /* Full height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+nav#navbar_main
+{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.centrado_vertical
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

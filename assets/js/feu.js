@@ -17,5 +17,9 @@ $(document).ready(function($){
         $("#slider1").removeClass("mt-5");
         $("#slider1").addClass("mt-7");
     }
-    console.log(ventana_ancho+" "+ventana_alto);
+    $("#seccion1").css("height", ventana_alto);
+    $("#seccion2").css("height", ventana_alto);
+    $("#seccion3").css("height", ventana_alto);
+    $("#obligado").css("height", ventana_alto);
+    //console.log(ventana_ancho+" "+ventana_alto);
 }); 

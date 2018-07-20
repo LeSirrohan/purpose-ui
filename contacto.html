@@ -19,6 +19,8 @@
     <!-- Theme CSS -->
     <link type="text/css" href="./assets/css/theme.css" rel="stylesheet">
     <link type="text/css" href="./assets/css/tema.css" rel="stylesheet">
+    <link type="text/css" href="./assets/css/strp.css" rel="stylesheet">
+    <link type="text/css" href="./assets/css/index.css" rel="stylesheet">
 </head>
 <body class="parallax">
     <header>             
@@ -44,16 +46,16 @@
                             <a class="nav-link btn-translate--hover" href="./contacto.html">Cont&aacute;ctenos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-translate--hover" href="./pages/contact.html">Consultar</a>
+                            <a class="nav-link btn-translate--hover" href="http://facturaenuna.com/portal">Consultar</a>
                         </li>
-                        <li id="sesion_bgn" class="nav-item mr-0" data-toggle="collapse" data-target="#navbar_main_collapse" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
-                            <a id="btn_max" href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" class="btn btn-white btn-circle btn-translate--hover" id="boton_inicio_sesion">
+                        <li class="nav-item">
+                            <a id="btn_max" href="http://facturaenuna.com/fe" class="common-Button" id="boton_inicio_sesion">
                                 <span class="btn-inner--icon"><i class="fas fa-user"></i></span>
                                 <span class="btn-inner--text"><span >Iniciar Sesi&oacute;n</span></span>
                             </a>
                         </li>
                         <li id="btn_min">
-                            <a class="nav-link btn-translate--hover" href="./pages/contact.html"><i class="fas fa-user"></i>&nbsp;Iniciar Sesión</a>
+                            <a class="nav-link btn-translate--hover" href="http://facturaenuna.com/fe"><i class="fas fa-user"></i>&nbsp;Iniciar Sesión</a>
 
                         </li>
                     </ul>
@@ -63,70 +65,65 @@
     </header>
 <!---->
     <div class="globalContent">
-        <main>
+        <main><br>
         <div class="gradient-background"></div>
-        <section class="contact-sales-header">
-        <div class="stripes-container initial">
-            <div class="stripe s2"></div>
-            <div class="stripe s3"></div>
-            <div class="stripe s4"></div>
-            <div class="stripe s5"></div>
-            <div class="stripe s7"></div>
-            <div class="stripe gradient"></div>
-            <div class="stripe s1"></div>
-            <div class="stripe s6"></div>
-            <div class="left-dots-container"></div>
-            <div class="light-dots-container"></div>
-            <div class="dark-dots-container"></div>
-            <div class="medium-dots-container"></div>
-        </div>
-        </section>
 
-        <section id="sct_contact_form" class="slice slice-lg" data-delimiter-before="1">
+
+        <div class="headline mt-5">        
+            <div class="container">
+                <h1 class="headline-text">Contacte con Nosotros</h1> 
+                <h2 class="common-IntroText">Nuestro equipo de ventas está a tu disposición para cualquier duda.
+                     Rellena el formulario y nos pondremos en contacto contigo lo antes posible.
+                </h2>  
+            </div>
+        </div>
+
+        <section id="sct_contact_form" class="mt-2 mb-4 " data-delimiter-before="1">
             <div class="container">
                 <div class="row row-grid align-items-center">
-                    <div class="col-lg-6">
-                        <h3>Contacte con Nosotros</h3>
-                        <p class="lead">Si hay algo en lo que te podamos ayudar, haznoslo saber. Estaremos felices de ofrecer nuestra ayuda</p>
-                        <form class="form mt-5" role="form">
+                    
+                    <div class="col-lg-6" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    transform: translate3d(30,10,10);border-radius: 10px;">
+                        
+                        <form class="form mt-2 mr-2" role="form">
                             <div class="row">
-                                    <label class="col-sm-3 align-middle mt-2" for="firstname">Tu nombre</label>
-                                    <input
-                                        id="firstname"
-                                        class="col-sm-12 col-md-9 form-control mt-2" 
-                                        name="firstname"
-                                        type="text"
-                                        placeholder="Juan"
-                                        required
-                                    >
+                                <label class="col-sm-4 align-middle mt-2" for="firstname"><h6>Tu nombre</h6></label>
+                                <input
+                                    id="firstname"
+                                    class="col-sm-12 col-md-8 form-control mt-2" 
+                                    name="firstname"
+                                    type="text"
+                                    placeholder="Italo"
+                                    required
+                                >
                             </div>
                             <div class="row">
-                                <label class="col-sm-3 align-middle mt-2" for="lastname">Tu apellido</label>
+                                <label class="col-sm-4 align-middle mt-2" for="lastname"><h6>Tu apellido</h6></label>
                                 <input
                                     id="lastname"
-                                    class="col-sm-12 col-md-9 form-control mt-2" 
+                                    class="col-sm-12 col-md-8 form-control mt-2" 
                                     name="lastname"
                                     type="text"
-                                    placeholder="Pérez"
+                                    placeholder="Sánchez"
                                     required
                                 >
                             </div>                                
                             <div class="row">
-                                <label class="col-sm-3 align-middle mt-2" for="lastname">Correo electrónico del trabajo</label>
+                                <label class="col-sm-4 align-middle mt-2" for="lastname"><h6>Correo electrónico del trabajo</h6></label>
                                     <input
                                         id="lastname"
-                                        class="col-sm-12 col-md-9 form-control mt-2" 
+                                        class="col-sm-12 col-md-8 form-control mt-2" 
                                         name="email"
                                         type="email"
-                                        placeholder="juan.perez@ejemplo.com"
+                                        placeholder="italo.sanchez@ejemplo.com"
                                         required
                                     >                               
                             </div>
                             <div class="row">
-                                <label class="col-sm-3 align-middle mt-2" for="website">Sitio Web de la empresa</label>
+                                <label class="col-sm-4 align-middle mt-2" for="website"><h6>Sitio Web de la empresa</h6></label>
                                     <input
                                         id="website"
-                                        class="col-sm-12 col-md-9 form-control mt-2" 
+                                        class="col-sm-12 col-md-8 form-control mt-2" 
                                         name="website"
                                         type="website"
                                         placeholder="www.ejemplo.com"
@@ -134,10 +131,10 @@
                                     >                               
                             </div>
                             <div class="row">
-                                <label class="col-sm-3 align-middle mt-2" for="website">País</label>
+                                <label class="col-sm-4 align-middle mt-2" for="website"><h6>País</h6></label>
                                     <select
                                     id="country"
-                                    class="col-sm-12 col-md-9 form-control mt-2" 
+                                    class="col-sm-12 col-md-8 form-control mt-2" 
                                     name="country"
                                     required
                                     data-searchable-select-input-placeholder="Buscar..."
@@ -316,7 +313,7 @@
                                         <option value="PA">Panamá</option>
                                         <option value="PG">Papúa Nueva Guinea</option>
                                         <option value="PY">Paraguay</option>
-                                        <option value="PE">Perú</option>
+                                        <option value="PE" selected="selected">Perú</option>
                                         <option value="PH">Filipinas</option>
                                         <option value="PN">Islas Pitcairn</option>
                                         <option value="PL">Polonia</option>
@@ -378,7 +375,7 @@
                                         <option value="UA">Ucrania</option>
                                         <option value="AE">Emiratos Árabes Unidos</option>
                                         <option value="GB">Reino Unido</option>
-                                        <option selected="selected" value="US">Estados Unidos</option>
+                                        <option value="US">Estados Unidos</option>
                                         <option value="UM">Islas menores alejadas de EE. UU.</option>
                                         <option value="UY">Uruguay</option>
                                         <option value="UZ">Uzbekistán</option>
@@ -396,9 +393,9 @@
                                     </select>                               
                             </div>
                             <div class="row">
-                                <label class="col-sm-3  align-middle mt-2" for="website">Volumen de Operaciones</label>
+                                <label class="col-sm-4  align-middle mt-2" for="website"><h6>Volumen de Operaciones</h6></label>
                                 <select
-                                class="col-sm-12 col-md-9 form-control mt-2" 
+                                class="col-sm-12 col-md-8 form-control mt-2" 
                                 id="volume"
                                 name="volume"
                                 required
@@ -417,22 +414,22 @@
                                 </select>                               
                             </div>
                             <div class="row">
-                                <label class="col-sm-3 align-middle mt-2" for="website">Información Adicional</label>
+                                <label class="col-sm-4 align-middle mt-2" for="website"><h6>Información Adicional</h6></label>
                                     <textarea 
-                                    class="col-sm-12 col-md-9 form-control mt-2 textarea-autosize" 
+                                    class="col-sm-12 col-md-8 form-control mt-2" 
                                     rows="5" placeholder="Escribe aquí la información"></textarea>
                             
                             </div>
-                            <div class="row">
-                                <button type="submit" class="btn btn-dark btn-circle mt-4">Contacta a nuestro equipo de ventas!</button>
-                            </div>
+                            <div class="row d-flex flex-row-reverse mb-2">
+                                    <button type="submit" class="common-Button common-Button--default mt-2">Contacta a nuestro equipo de ventas!</button>
+                            </div>                            
                             <!-- <button type="submit" class="btn btn-dark btn-circle mt-4">Contacta a nuestro equipo de ventas!</button> -->
                         </form>
                     </div>
                     <div class="col-lg-5 text-left mb-auto ml-4">
-                        <h3>Tax Technology S.A.C.8</h3>
-                        <p>E: <a href="#contact" style="color:blue !important">support@webpixels.io</a>
-                            <br>T: 0755.222.333</p>
+                        <h3>Tax Technology S.A.C.</h3>
+                        <p>E: <a href="#contact" style="color:blue !important">hola@facturaenuna.com</a>
+                            <br>T:+91 993 501 853</p>
                         <p>Av. Paseo de la República 5663 <br>
                         Miraflores, Lima <br>
                         Perú</p>
@@ -449,15 +446,14 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="pr-lg-4">
-                        <h5 class="heading h6 text-uppercase font-weight-700 mb-3">Contact</h5>
+                        <h5 class="heading h6 text-uppercase font-weight-700 mb-3">Contacto</h5>
                         <ul class="list-unstyled text-small">
                             <li class="d-flex py-2">
                                 <div>
                                     <i class="fas fa-map-marker"></i>
                                 </div>
                                 <div>
-                                    <span class="pl-3 d-inline-block">Webpixels Studios<br>
-                        150 Southeast Pidgeon Meadow Claflin Terrace, San Francisco, US</span>
+                                    <span class="pl-3 d-inline-block">Tax Technology S.A.C.</span>
                                 </div>
                             </li>
                             <li class="d-flex py-2">
@@ -465,7 +461,7 @@
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div>
-                                    <span class="pl-3 d-inline-block">+40 - 0755.222.333</span>
+                                    <span class="pl-3 d-inline-block">T: 0755.222.333</span>
                                 </div>
                             </li>
                             <li class="d-flex py-2">
@@ -473,45 +469,21 @@
                                     <i class="fas fa-envelope-open"></i>
                                 </div>
                                 <div>
-                                    <span class="pl-3 d-inline-block">support@webpixels.io</span>
+                                    <span class="pl-3 d-inline-block">E: <a href="#contact" style="color:blue !important">info@facturaenuna.com</a>
+                                    </span>
                                 </div>
                             </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <h5 class="heading h6 text-uppercase font-weight-700 mb-3">About us</h5>
-                    <ul class="list-unstyled text-small">
-                        <li class="py-2"><a href="#">Our company</a>
-                        </li>
-                        <li class="py-2"><a href="#">Careers</a>
-                        </li>
-                        <li class="py-2"><a href="#">Project</a>
-                        </li>
-                        <li class="py-2"><a href="#">Services</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2">
-                    <h5 class="heading h6 text-uppercase font-weight-700 mb-3">Solutions</h5>
-                    <ul class="list-unstyled">
-                        <li class="py-2"><a href="#">Landing pages</a>
-                        </li>
-                        <li class="py-2"><a href="#">UI components</a>
-                        </li>
-                        <li class="py-2"><a href="#">Premium plugins</a>
-                        </li>
-                        <li class="py-2"><a href="#">Bootstrap themes</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="pr-lg-5">
-                        <h1 class="heading h6 text-uppercase font-weight-700 mb-3"><strong>Purpose</strong> UI Kit</h1>
-                        <ul class="list-unstyled">
-                            <li class="py-2"><a href="#">Terms and conditions</a>
-                            </li>
-                            <li class="py-2"><a href="#">Privacy policy</a>
+                            <li class="d-flex py-2">
+                                <div>
+                                    <i class="fas fa-address-card"></i>
+                                </div>
+                                <div>
+                                    <span class="pl-3 d-inline-block">
+                                        <p>Av. Paseo de la República 5663 <br>
+                                        Miraflores, Lima <br>
+                                        Perú</p></a>
+                                    </span>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -525,7 +497,7 @@
                     <a href="./">
                         <img src="./assets/img/brand/icon.png" class="alpha-6 alpha-10--hover" style="width: 70px;">
                     </a>
-                    <span class="d-block mt-4">&copy; 2018 <a href="https://webpixels.io/" class="footer-link" target="_blank">Webpixels</a>. All rights reserved.</span>
+                    <span class="d-block mt-4">&copy; 2018 <a href="https://taxtech.com/" class="footer-link" target="_blank">TaxTech</a>. Todos los derechos reservados.</span>
                 </div>
             </div>
         </div>
