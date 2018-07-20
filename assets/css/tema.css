@@ -77,3 +77,41 @@ nav#navbar_main
     justify-content: center;
     align-items: center;
 }
+
+.centrado_vertical2
+{
+    display: flex;
+    align-items: center;
+}
+
+.yourFluidImage 
+{
+    width:100%;
+    height:auto;
+}
+
+.swiper-wrapper 
+{
+    height:auto !important;
+}
+
+.swiper-slide 
+{
+    height:auto !important;
+}
+.subtitulo
+{
+    font-weight:300;
+    color:#6772e5;
+    font-size: 18px;
+    display:block
+}
+.seccion2-transform
+{
+    
+    transform-style: preserve-3d;
+    transform: rotateX(-5deg) rotateY(-5deg) rotateZ(-5deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translate3d(30,10,10);
+    border-radius: 10px;
+}
