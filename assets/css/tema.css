@@ -101,8 +101,14 @@ nav#navbar_main
 }
 .subtitulo
 {
+    font-weight: 600;    color:#06b27e;
+    font-size: 36px;
+    display:block
+}
+.subtitulo2
+{
     font-weight:300;
-    color:#6772e5;
+    color:#424770;
     font-size: 18px;
     display:block
 }
