@@ -2328,11 +2328,18 @@ code,pre
     }
     .globalFooter
     {
-        font-family:Camphor,Open Sans,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:#f6f9fc;position:relative
+        font-family:Camphor,Open Sans,Segoe UI,sans-serif;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+        background:#f6f9fc;
+        position: relative;
+        bottom: 0;
+        width: 100%;
     }
     .globalFooter.withCards
     {
-        background:transparent;overflow:hidden;padding-top:500px;margin-top:-480px;pointer-events:none
+        background:transparent;
+        overflow:hidden;padding-top:500px;margin-top:-480px;pointer-events:none
     }
     .globalFooter.withCards>*
     {
