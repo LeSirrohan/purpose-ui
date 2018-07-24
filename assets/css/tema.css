@@ -164,9 +164,14 @@ nav#navbar_main
 .seccion2-transform
 {
     
-    transform-style: preserve-3d;
-    transform: rotateX(-5deg) rotateY(-5deg) rotateZ(-5deg);
+   /* transform-style: preserve-3d;
+    transform: rotateX(-5deg) rotateY(-5deg) rotateZ(-5deg);*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: translate3d(30,10,10);
+   /* transform: translate3d(30,10,10);*/
     border-radius: 10px;
+}
+.rectangulo {
+    width: 20%; 
+    height: 99%;; 
+    background: #4553ff;
 }

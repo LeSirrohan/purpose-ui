@@ -636,7 +636,7 @@ code,pre
 
 .common-Button3:focus,.common-Button3:hover
 {
-    color:#fff;
+    color:#32325d;
     -webkit-transform:translateY(-1px);
     transform:translateY(-1px);
     -webkit-box-shadow:0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
@@ -2327,6 +2327,17 @@ code,pre
         white-space:nowrap
     }
     .globalFooter
+    {
+        font-family:Camphor,Open Sans,Segoe UI,sans-serif;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+        background:#f6f9fc;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .globalFooter2
     {
         font-family:Camphor,Open Sans,Segoe UI,sans-serif;
         -webkit-font-smoothing:antialiased;
