@@ -1,6 +1,7 @@
 $(document).ready(function($){
 	var ventana_ancho = $(window).width();
     var ventana_alto = $(window).height();
+    var ventana_alto2 = ventana_alto*0.7;
     $("a#btn_max").hide();
     $("#btn_min").show();
 
@@ -18,8 +19,9 @@ $(document).ready(function($){
         $("#slider1").addClass("mt-7");
     }
     $("#seccion1").css("height", ventana_alto);
-    $("#seccion2").css("height", ventana_alto);
+    $("#seccion2").css("height", ventana_alto2);
     $("#seccion3").css("height", ventana_alto);
+    $("#seccion4").css("height", ventana_alto);
     $("#obligado").css("height", ventana_alto);
     //console.log(ventana_ancho+" "+ventana_alto);
 }); 
@@ -39,5 +41,5 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
 }

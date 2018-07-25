@@ -568,6 +568,26 @@ code,pre
     -webkit-transition:all .15s ease;
     transition:all .15s ease
 }
+.common-Button4
+{
+    white-space:nowrap;
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    padding:0 14px;
+    -webkit-box-shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+    box-shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+    background:#fff;
+    border-radius:4px;
+    font-size:15px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.025em;
+    color:#6772e5;
+    text-decoration:none;
+    -webkit-transition:all .15s ease;
+    transition:all .15s ease
+}
 .common1-Button21
 {
     white-space:nowrap;
@@ -615,7 +635,7 @@ code,pre
     box-shadow:0 0 0 1.5px hsla(0,0%,100%,.75),inset 0 0 0 1.25px rgba(82,95,127,.5),0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08)
 }
 
-.common-Button:focus,.common-Button:hover
+.common-Button4:focus,.common-Button4:hover
 {
     color:#7795f8;
     -webkit-transform:translateY(-1px);
@@ -624,6 +644,14 @@ code,pre
     box-shadow:0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08)
 }
 
+.common-Button:focus,.common-Button:hover
+{
+    color:#7795f8;
+    -webkit-transform:translateY(-1px);
+    transform:translateY(-1px);
+    -webkit-box-shadow:0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+    box-shadow:0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08)
+}
 .common1-Button21:focus,.common1-Button21:hover
 {
     color:#fff;

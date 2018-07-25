@@ -7748,8 +7748,8 @@ button.bg-dark:focus
 }
 .bg-stripes2
 {
-    background: linear-gradient(90deg,#53f 20%,#4356ff 50%,#1da6ff 98%) !important
-
+    background: linear-gradient(90deg,#53f 24%,#4b47ff 1%,#2593ff 80%,#17afff 99%) !important;
+}
 }
 .bg-stripes3
 {
@@ -17588,7 +17588,7 @@ Styled shaped wrappers for displaying code and images in a more stylish manner
 
 section
 {
-    background-color: #fff;
+    background-color: #f5f9fc;
 }
 
 .slice
@@ -17636,7 +17636,7 @@ section
     height: 100%;
     padding-bottom: 10em; 
 
-    border-bottom-left-radius: 3rem;
+    border-bottom-left-radius: 5rem;
 }
 
 @media (min-width: 992px)
@@ -17647,14 +17647,14 @@ section
     }
     .section-rotate .section-inner
     {
-        top: -30%;
+        top: -19.8%;
         left: -1rem;
 
         overflow: hidden; 
 
         width: 130%;
 
-        transform: rotate(-7deg);
+        transform: rotate(-4deg);
 
         background: inherit;
     }
