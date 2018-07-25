@@ -118,9 +118,9 @@
                                     >
                                 </div>                                
                                 <div class="row">
-                                    <label class="col-sm-4 align-middle mt-2" for="lastname"><h6>Correo electrónico del trabajo</h6></label>
+                                    <label class="col-sm-4 align-middle mt-2" for="email"><h6>Correo electrónico del trabajo</h6></label>
                                         <input
-                                            id="lastname"
+                                            id="email"
                                             class="col-sm-12 col-md-8 form-control mb-2" 
                                             name="email"
                                             type="email"
@@ -140,7 +140,7 @@
                                         >                               
                                 </div>
                                 <div class="row">
-                                    <label class="col-sm-4 align-middle mt-2" for="website"><h6>País</h6></label>
+                                    <label class="col-sm-4 align-middle mt-2" for="country"><h6>País</h6></label>
                                         <select
                                         id="country"
                                         class="col-sm-12 col-md-8 form-control mb-2" 
@@ -402,7 +402,7 @@
                                         </select>                               
                                 </div>
                                 <div class="row">
-                                    <label class="col-sm-4  align-middle mt-2" for="website"><h6>Volumen de Operaciones</h6></label>
+                                    <label class="col-sm-4  align-middle mt-2" for="volume"><h6>Volumen de Operaciones</h6></label>
                                     <select
                                     class="col-sm-12 col-md-8 form-control mb-2" 
                                     id="volume"
@@ -411,25 +411,25 @@
                                     >
                                     <option selected disabled value="">Selecciona una cantidad</option>
                                     <option
-                                        value="{&quot;tier&quot;:&quot;none&quot;,&quot;text&quot;:&quot;Ninguno (estoy empezando)&quot;,&quot;lower_bound&quot;:0}"
+                                        value="0"
                                     >
                                         Ninguna (estoy empezando)
                                     </option>
-                                        <option value="{&quot;index&quot;:0,&quot;total&quot;:5,&quot;text&quot;:&quot;50 facturas o menos&quot;,&quot;lower_bound&quot;:0}">50 facturas o menos</option>
-                                        <option value="{&quot;index&quot;:1,&quot;total&quot;:5,&quot;text&quot;:&quot;50 facturas a 100 facturas&quot;,&quot;lower_bound&quot;:5000000}">50 facturas a 100 facturas</option>
-                                        <option value="{&quot;quot;index&quot;:2,&quot;total&quot;:5,&quot;text&quot;:&quot;100 facturas a 1.000 facturas&quot;,&quot;lower_bound&quot;:10000000}">100 facturas a 1.000 facturas</option>
-                                        <option value="{&quot;index&quot;:4,&quot;total&quot;:5,&quot;text&quot;:&quot;10.00 facturas o más&quot;,&quot;lower_bound&quot;:1000000000}">10.000 facturas o más</option>
+                                        <option value="1">50 facturas o menos</option>
+                                        <option value="2">50 facturas a 100 facturas</option>
+                                        <option value="3">100 facturas a 1.000 facturas</option>
+                                        <option value="4">10.000 facturas o más</option>
                                     </select>                               
                                 </div>
                                 <div class="row">
-                                    <label class="col-sm-4 align-middle mt-2" for="website"><h6>Información Adicional</h6></label>
-                                        <textarea 
+                                    <label class="col-sm-4 align-middle mt-2" for="info"><h6>Información Adicional</h6></label>
+                                        <textarea name="info" id="info"
                                         class="col-sm-12 col-md-8 mt-2 form-control" 
                                         rows="3" placeholder="Escribe aquí la información"></textarea>
                                 
                                 </div>
                                 <div class="row d-flex flex-row-reverse mt-3 mb-3">
-                                        <a  href="./contacto.html" class="common-Button common-Button--default">Contacta a nuestro equipo de ventas</a>
+                                        <a id="contact"  href="#" class="common-Button common-Button--default">Contacta a nuestro equipo de ventas</a>
                                 </div>                            
                                 <!-- <button type="submit" class="btn btn-dark btn-circle mt-4">Contacta a nuestro equipo de ventas!</button> -->
                             </form>
