@@ -1,7 +1,7 @@
 $(document).ready(function($){
 	ventana_ancho = $(window).width();
     ventana_alto = $(window).height();
-    ventana_alto2 = ventana_alto*0.702;
+    ventana_alto2 = ventana_alto*0.752;
     ventana_alto3 = ventana_alto*1.852;
     ventana_alto4 = ventana_alto*1.552;
     $("a#btn_max").hide();
@@ -77,13 +77,14 @@ $(document).ready(function($){
             {
                 console.log("765 1010");
                 cambios();
-                $("#seccion2").css("height", ventana_alto2);
-                $("#seccion4").css("height", ventana_alto);
             }
             
            
         }
     }
+    
+    $("#seccion2").css("height", ventana_alto2);
+    $("#seccion4").css("height", ventana_alto);
     $("#seccion_1").css("height", ventana_alto);
     $("#seccion3").css("height", ventana_alto);
     $("#obligado").css("height", ventana_alto);
