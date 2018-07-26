@@ -28,10 +28,8 @@
     <header>
         <nav class="bg-stripes2 navbar navbar-expand-lg navbar-transparent" id="navbar_main">
             <div class="container">
-
                 <a class="navbar-brand mr-lg-5" href="./index.html"><strong>Factura</strong>enUna </a> 
                 <!--<div  class="triangulo">
-
                     </div>-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_main_collapse" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"  style="color:#32325d !important"><i class="fa fa-bars"></i></span>
@@ -62,7 +60,6 @@
                         </li>
                         <li id="btn_min">
                             <a class="nav-link btn-translate--hover" href="http://facturaenuna.com/fe"><i class="fas fa-user"></i>&nbsp;Iniciar Sesión</a>
-
                         </li>
                     </ul>
                 </div>
@@ -70,21 +67,21 @@
         </nav>
     </header>
     <main>
-    <section class="slice slice-xl section-rotate d-flex align-items-center">
+    <section class="slice slice-xl section-rotate d-flex align-items-center" id="seccion_1">
         <div class="section-inner bg-stripes">
             <span class="section-inner-bg"></span>
         </div>
         <div class="container py-sm">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class=" text-white mb-3">Descubre. Da un paso adelante.</h1>
+                <div class="col-lg-7">
+                    <h1 class=" text-white mb-3" style="font-family: Camphor,Open Sans,Segoe UI,sans-serif !important;">Una plataforma para facturar, pensada para crecer.</h1>
                     <p class="lead text-white lh-180">Estás en buenas manos.Todo lo que necesitas para cumplir con SUNAT, sin moverte de tu oficina.</p>
-                    <div class="mt-5">
-                        <a href="#" class="common1-Button21 mr-3">PRUEBA GRATIS</a>
-                        <a  href="./contacto.html" class="common-Button ml-3">CONTACTA AL EQUIPO DE VENTAS</a>
+                    <div id="seccion1_botones1" class="mt-5">
+                        <a id="btn_3" href="#" class="common1-Button21 mr-3">PRUEBA GRATIS</a>
+                        <a id="btn_4" href="./contacto.html" class="common-Button ml-3">CONTACTA AL EQUIPO DE VENTAS</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <div class="frame-laptop swiper-js-container">
                         <img src="./assets/img/spotlight/macbook.svg" class="img-fluid">
                         <div class="frame-inner">
@@ -119,12 +116,9 @@
         </div>
     </section>
     <!-- Spotlight
-    <section class="bg-stripes bg-cover bg-lg-cover bg-size--cover centrado_vertical" id="seccion1">
-
-        <div class="container" id="slider1">
-            
-            <div class="row row-grid justify-content-around" style="display: flex;justify-content: center;align-items: center;">
-                
+    <section class="bg-stripes bg-cover bg-lg-cover bg-size--cover centrado_vertical" id="seccion_1">
+        <div class="container" id="slider1">            
+            <div class="row row-grid justify-content-around" style="display: flex;justify-content: center;align-items: center;">                
                 <div class="col-lg-6">
                     <div class="pt-lg-md pb-lg-md text-center text-lg-left">
                         <h2 class="heading h1 text-white mb-3">Descubre. Da un paso adelante.</h2>
@@ -169,17 +163,17 @@
             </div>
         </div>-->
         <!--
-        <span class="triangulo">
-
-            
+        <span class="triangulo">            
         </span>
         <span class="triangulo2">
-
         </span>-->
     </section>
     
     <!-- Cuerpo2-->
-    <section class="bg-secondary centrado_vertical" data-separator="rounded-right" data-separator-orientation="bottom" id="seccion2">
+    <section class="bg-secondary centrado_vertical" 
+            data-separator="rounded-right" 
+            data-separator-orientation="bottom" 
+            id="seccion2">
         <div class="container">
             <div class="row row-grid">  
                 <div class="seccion2-transform col-lg-6 ">
@@ -202,14 +196,15 @@
                     </div>
                 </div> 
                 <div class="col-lg-6">
-                    <div class="pb-1 px-5">
+                    <div id="texto_cuerpo_2" class="pb-2 px-5">
                         <h2 class="common-UppercaseTitle">
                             <span>
-                                    PREPARADO PARA EL PRESENTE Y EL FUTURO
+                                ENFÓCATE EN TU NEGOCIO Y FACTURA EN UNA
                             </span>
                         </h2>
-                        <p class="common-IntroText mt-3">
-                                Integra las tecnologías más modernas con una plataforma innovadora que mejora constantemente e incorpora nuevas funciones cada semana. Nos adaptamos a tus necesidades a medida que crece tu negocio y evoluciona la industria.
+                        <p class="common-IntroText mt-3" id="texto_cuerpo_3">
+                            Una vez habilitado puedes crear tus facturas electrónicas, gestionar los pagos y controlar tu negocio. Tendrás acceso a reportes con la información actualizada de tus ventas, desde donde estés, las 24 horas.
+
 
                         </p>
                     </div>
@@ -374,8 +369,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12 mt-5">
-                    <div class="mb-md text-center">
-                        
+                    <div class="mb-md text-center">                        
                         <h2 class="common-UppercaseTitle">
                             <span>
                                     Adquierelo en 3 pasos, sin complicaciones.
@@ -440,10 +434,12 @@
                                     <svg viewBox="0 0 36 42" width="36" height="42" xmlns="http://www.w3.org/2000/svg">
                                         <g fill="none" fill-rule="evenodd">
                                             <path d="M.5 37.579h3.421a.5.5 0 0 1 .5.5V41.5a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3.421a.5.5 0 0 1 .5-.5zm7.737-2.21h3.42a.5.5 0 0 1 .5.5V41.5a.5.5 0 0 1-.5.5h-3.42a.5.5 0 0 1-.5-.5v-5.632a.5.5 0 0 1 .5-.5zm7.737-4.422h3.42a.5.5 0 0 1 .5.5V41.5a.5.5 0 0 1-.5.5h-3.42a.5.5 0 0 1-.5-.5V31.447a.5.5 0 0 1 .5-.5zm7.737-5.526h3.42a.5.5 0 0 1 .5.5V41.5a.5.5 0 0 1-.5.5h-3.42a.5.5 0 0 1-.5-.5V25.921a.5.5 0 0 1 .5-.5zm7.736-6.632h3.421a.5.5 0 0 1 .5.5V41.5a.5.5 0 0 1-.5.5h-3.42a.5.5 0 0 1-.5-.5V19.29a.5.5 0 0 1 .5-.5z" fill="#24b47e"></path>
-                                            <path d="M24.53 9.127c-.168-.3-1.879-.871-5.134-1.711L34.228 0l1.14 15.973c-2.64-1.902-4.162-2.852-4.563-2.852C27.349 20.265 13.69 31.375 0 35.368c12.238-8.508 20.415-17.255 24.53-26.24z" fill="#3ecf8e"></path></g></svg>
+                                            <path d="M24.53 9.127c-.168-.3-1.879-.871-5.134-1.711L34.228 0l1.14 15.973c-2.64-1.902-4.162-2.852-4.563-2.852C27.349 20.265 13.69 31.375 0 35.368c12.238-8.508 20.415-17.255 24.53-26.24z" fill="#3ecf8e"></path>
+                                        </g>
+                                    </svg>
                                 </div>
                                 <h3 class="common-BodyTitle mb-3">Factura en una</h3>
-                                <p class="common-BodyText">Comienza sin complicaciones. Con <b>Factura</b>enUna aceleras el proceso de facturación electrónica</p>
+                                <p class="common-BodyText">Comienza sin complicaciones. Con <b>Factura</b>enUna aceleras el proceso de facturación electrónica.</p>
                             </div>
                         </div>
                     </div>
@@ -459,8 +455,8 @@
                     <p class="common-IntroText">Contacta con nosotros.</p>
                 </div>
                 <div class="col-lg-5 text-right mt-2">                            
-                        <a  href="./contacto.html" class="common-Button common-Button--default">Contacta a nuestro equipo de ventas</a>
-                    </div>
+                    <a  href="./contacto.html" class="common-Button common-Button--default">Contacta a nuestro equipo de ventas</a>
+                </div>
             </div>
         </div>
         <!--            <div class="shape-container" data-shape-style="curve" data-shape-position="bottom">
@@ -492,27 +488,26 @@
             </div>
 
         </div>
-    </section> -->
-       
+    </section> -->       
     </main>
     <footer class="globalFooter">
         <div class="row">
-            <div class="col-lg-4 mt-3 mb-3 ml-5">
+            <div class="col-lg-4 mt-3 mb-3 ml-5" id="enlaceFooter1">
                 <span class="d-block" style="font-size: 14px;">&reg; 2018 
                     <a style="color:darkblue;" href="https://taxtech.pe/" class="footer-link">TaxTech</a>. Todos los derechos reservados.
                 </span>
             </div>
-            <div class="col-lg-2 mt-3 mb-3 text-right">
+            <div class="col-lg-2 mt-3 mb-3 text-right" id="enlaceFooter2">
                 <span class="d-block" style="font-size: 14px;">
                     <a style="color:darkblue;"  href="./contacto.html" class="footer-link">Contáctenos</a>. 
                 </span>
             </div>
-            <div class="col-lg-2 mt-3 mb-3 text-right">
+            <div class="col-lg-2 mt-3 mb-3 text-right" id="enlaceFooter3">
                 <span class="d-block" style="font-size: 14px;">
                     <a style="color:darkblue;"  href="./terms.html" class="footer-link">Términos y condiciones</a>. 
                 </span>
             </div>
-            <div class="col-lg-2 mt-3 mb-3 text-right">
+            <div class="col-lg-2 mt-3 mb-3 text-right" id="enlaceFooter4">
                 <span class="d-block" style="font-size: 14px;">
                     <a style="color:darkblue;"  href="./privacy.html" class="footer-link">Políticas de Privacidad</a>. 
                 </span>

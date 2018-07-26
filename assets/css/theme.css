@@ -7750,11 +7750,17 @@ button.bg-dark:focus
 {
     background: linear-gradient(90deg,#53f 24%,#4b47ff 1%,#2593ff 80%,#17afff 99%) !important;
 }
-}
 .bg-stripes3
 {
     background: linear-gradient(90deg,#53f 70%,#4454ff 97%) !important
-
+}
+.bg-stripes4
+{
+    background: linear-gradient(90deg,#53f 24%,#5533ff 1%,#4c44ff 80%,#3f60ff 99%) !important;
+}
+.bg-stripes5
+{
+    background: linear-gradient(90deg,#53f 24%,#5336ff 1%,#4454ff 80%,#3a6aff 99%) !important;
 }
 a.bg-stripes:hover,
 a.bg-stripes:focus,
