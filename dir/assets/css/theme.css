@@ -7748,8 +7748,8 @@ button.bg-dark:focus
 }
 .bg-stripes2
 {
-    background: linear-gradient(90deg,#53f 24%,#4b47ff 1%,#10c0ff 80%,#13d8fb 99%) !important;
-}
+    background: linear-gradient(90deg,#53f 24%,#4b47ff 1%,#2593ff 80%,#13b6ff 99%) !important;
+s}
 .bg-stripes3
 {
     background: linear-gradient(90deg,#53f 70%,#4454ff 97%) !important

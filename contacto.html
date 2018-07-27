@@ -94,8 +94,8 @@
                         <div class="col-lg-7 bg-white" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                         transform: translate3d(30,10,10);border-radius: 10px;">
                             
-                            <form class="form mt-2 mr-2" role="form" id="ContactForm">
-                                <div class="row">
+                        <form class="form mt-2 mr-2" role="form" id="ContactForm">
+                            <div class="row">
                                     <label class="col-sm-4 align-middle mt-2" for="firstname"><h6>Tu nombre</h6></label>
                                     <input
                                         id="firstname"
@@ -516,13 +516,15 @@
     <script src="./assets/js/feu.js"></script>
     <!--<script src="./assets/js/contact.js"></script>-->
     <script>
+$(document).ready(function($){
+
         $.validator.setDefaults( {
 			submitHandler: function () {
 				alert( "submitted!" );
 			}
 		} );
 
-        $( "form" ).validate( {
+        $( "#form" ).validate( {
             rules: {
                 firstname: "required",
                 lastname: "required",
@@ -580,6 +582,39 @@
                 $( element ).next( "span" ).addClass( "glyphicon-ok" ).removeClass( "glyphicon-remove" );
             }
         } );
+        });
+        
+
+       /* $.get("45.55.188.65/selectra_cotizador/envio_correo.php",{firstname:firstname,lastname:lastname,ruc:ruc},function(res){
+            console.log(res);
+
+        });*/
+        $("form").submit(function(){
+            
+        firstname = $("#firstname").val();
+        lastname  = $("#lastname").val();
+        ruc       = $("#ruc").val();
+        telefono  = $("#telefono").val();
+        email     = $("#email").val();
+        website   = $("#website").val();
+        volume    = $("#volume").val();
+        info      = $("#info").val();
+            $.get("http://45.55.188.65/selectra_cotizador/envio_correo.php",
+            {
+                firstname: firstname,
+                lastname : lastname,
+                ruc      : ruc,
+                telefono : telefono,
+                email    : email,
+                website  : website,
+                info     : info,
+                volume   : volume
+            }
+            ,function(res){
+                console.log(res);
+
+            });
+        });
     </script>
 </body>
 
