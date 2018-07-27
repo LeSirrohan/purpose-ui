@@ -1,0 +1,177 @@
+@media (min-width: 991.98px)
+{
+    #paralelogramo 
+    {
+        z-index: 3;
+        width: 700px; 
+        height: 200px;     
+        background: #53f;
+        -webkit-transform: skewY(-20deg); 
+        -moz-transform: skewY(-30deg); 
+        -o-transform: skewY(-30deg); 
+        position: fixed;
+        top: -150px;
+        left: 0px;
+    }
+}
+.triangulo 
+{
+    z-index:100 ; 
+	border-top: 0px solid transparent;
+	border-left: 500px solid #4553ff;
+	border-bottom: 150px solid transparent;
+    position: relative;
+    top: 25px;
+    left: 25%;
+    width: 600px;   
+}
+.triangulo2 
+{
+    z-index: 0;
+   border-top: 300px solid transparent;
+   border-right: 700px solid #232323;
+   border-bottom: 0px solid transparent;
+   position: relative;
+   top: 25px;;
+   right: -200px;
+   width: 600px;   
+}
+#triangulo3 
+{
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid #f0ad4e;
+    border-left: 100px solid #f0ad4e;
+    border-bottom: 100px solid transparent;
+    position: relative;
+}
+.parallax 
+{
+    /* The image used */
+    background-image: url('img_parallax.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#seccion1
+{
+    background: linear-gradient(to bottom right, #53f, #25ddf5);
+}
+nav#navbar_main
+{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.centrado_vertical
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrado_vertical2
+{
+    display: flex;
+    align-items: center;
+}
+
+.yourFluidImage 
+{
+    width:100%;
+    height:auto;
+}
+
+.swiper-wrapper 
+{
+    height:auto !important;
+}
+
+.swiper-slide 
+{
+    height:auto !important;
+}
+.subtitulo
+{
+    font-weight: 600;    color:#06b27e;
+    font-size: 36px;
+    display:block
+}
+.subtitulo2
+{
+    font-weight:300;
+    color:#424770;
+    font-size: 18px;
+    display:block
+}
+.mySlides {display: none;}
+/* Slideshow container */
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    }
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.seccion2-transform
+{
+    
+   /* transform-style: preserve-3d;
+    transform: rotateX(-5deg) rotateY(-5deg) rotateZ(-5deg);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   /* transform: translate3d(30,10,10);*/
+    border-radius: 10px;
+}
+.rectangulo {
+    width: 20%; 
+    height: 99%;; 
+    background: #4553ff;
+}
