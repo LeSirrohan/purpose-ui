@@ -53,13 +53,15 @@
                             <a class="nav-link btn-translate--hover" href="http://facturaenuna.com/portal">Consultar</a>
                         </li>
                         <li class="nav-item">
-                            <a id="btn_max" href="http://facturaenuna.com/fe" class="common-Button" id="boton_inicio_sesion">
-                                <span class="btn-inner--icon"><i class="fas fa-user"></i></span>
+                            <!--<a id="btn_max" href="http://facturaenuna.com/fe" class="common-Button" id="boton_inicio_sesion">-->
+                            <a id="btn_max" href="./login.html" class="common-Button" id="boton_inicio_sesion">
+                                    <span class="btn-inner--icon"><i class="fas fa-user"></i></span>
                                 <span class="btn-inner--text"><span >Iniciar Sesi&oacute;n</span></span>
                             </a>
                         </li>
                         <li id="btn_min">
-                            <a class="nav-link btn-translate--hover" href="http://facturaenuna.com/fe"><i class="fas fa-user"></i>&nbsp;Iniciar Sesión</a>
+                            <!--a class="nav-link btn-translate--hover" href="http://facturaenuna.com/fe"><i class="fas fa-user"></i>&nbsp;Iniciar Sesión</a>-->
+                            <a class="nav-link btn-translate--hover" href="./login.html"><i class="fas fa-user"></i>&nbsp;Iniciar Sesión</a>
                         </li>
                     </ul>
                 </div>
@@ -325,7 +327,7 @@
                             <li>Monthly updates</li>
                             <li>Free cancelation</li>
                         </ul>
-                        <a href="#" class="common-Button common-Button--default mr-3">Plan 1</a>
+                        <a id="boton1" href="" class="common-Button common-Button--default mr-3">Plan 1</a>
                     </div>
                 </div>
                 <div class="card card-pricing zoom-in shadow-lg rounded text-center px-3 mb-4">
@@ -341,7 +343,10 @@
                             <li>Monthly updates</li>
                             <li>Free cancelation</li>
                         </ul>
-                        <a href="#" class="common1-Button21 mr-3">PLAN 2</a>
+                       <!-- <button type="button" class="btn btn-block btn-info">
+                            Default modal
+                        </button>-->
+                        <a  id="boton1" href="" class="common1-Button21 mr-3" data-toggle="modal" data-target="#modal_1">PLAN 2</a>
                     </div>
                 </div>
                 <div class="card card-pricing box-shadow-1 text-center px-3 mb-4">
@@ -357,7 +362,7 @@
                             <li>Monthly updates</li>
                             <li>Free cancelation</li>
                         </ul>
-                        <a href="#" class="common-Button common-Button--default mr-3">Plan 3</a>
+                        <a id="boton1" href="" class="common-Button common-Button--default mr-3">Plan 3</a>
                     </div>
                 </div>
             </div>
@@ -490,6 +495,48 @@
         </div>
     </section> -->       
     </main>
+    <!-- Modal -->
+    <div class="modal modal-fluid" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 text-center py-4">
+                            <h4 class="heading h3">FacturaenUna!</h4> 
+                            <form>
+                                <div class="form-group row">
+                                    <label for="colFormLabelSm" class="col-sm-2 col-form-label">Correo Electrónico</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" size="50" data-culqi="card[email]" class="form-control" id="colFormLabelSm" placeholder="Correo Electrónico">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="colFormLabel" class="col-sm-2 col-form-label">Número de tarjeta</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" size="20" data-culqi="card[number]" class="form-control" id="colFormLabel" placeholder="Número de tarjeta">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="colFormLabelLg" class="col-sm-2 col-form-label">CVC</label>
+                                    <div class="col-sm-10">
+                                        <input  type="text" size="4" data-culqi="card[cvc]" class="form-control" id="colFormLabelLg" placeholder="col-form-label-lg">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="colFormLabelLg" class="col-sm-2 col-form-label">Fecha expiración (MM/YYYY)</label>
+                                    <div class="col-sm-10">
+                                        <input type="text"  class="form-control" size="2" data-culqi="card[exp_month]">
+                                        <span>/</span>
+                                        <input type="text"  class="form-control" size="4" data-culqi="card[exp_year]">                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="globalFooter">
         <div class="row">
             <div class="col-lg-4 mt-3 mb-3 ml-5" id="enlaceFooter1">

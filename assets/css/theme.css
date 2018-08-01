@@ -2973,16 +2973,16 @@ fieldset:disabled a.btn
 .btn-primary
 {
     color: #fff;
-    border-color: #510fa8;
-    background-color: #510fa8;
+    border-color: #5533ff;
+    background-color: #5533ff;
     box-shadow: none;
 }
 .btn-primary:hover
 {
     color: #fff;
     border-color: #3a0b79;
-    background-color: #400c85;
-    box-shadow: 0 0 15px rgba(81, 15, 168, .35);
+    background-color: #5533ee;
+    box-shadow: 0 0 15px rgba(81, 15, 168, .60);
 }
 .btn-primary:focus,
 .btn-primary.focus
@@ -7734,7 +7734,7 @@ button.bg-dark:focus
 }
 .bg-stripes
 {
-    background: linear-gradient(150deg,#53f 15%,#05d5ff 55%,#a6ffcb 97%) !important;
+    background: linear-gradient(150deg,#5533ff 15%,#05d5ff 55%,#a6ffcb 97%) !important;
     height: 0; 
 
     /* Full height */
@@ -7748,19 +7748,19 @@ button.bg-dark:focus
 }
 .bg-stripes2
 {
-    background: linear-gradient(90deg,#53f 24%,#4b47ff 1%,#11bdff 80%,#12d8fb 99%) !important;
+    background: linear-gradient(90deg,#5533ff 24%,#4b47ff 1%,#11bdff 80%,#12d8fb 99%) !important;
 }
 .bg-stripes3
 {
-    background: linear-gradient(90deg,#53f 70%,#4454ff 97%) !important
+    background: linear-gradient(90deg,#5533ff 70%,#4454ff 97%) !important
 }
 .bg-stripes4
 {
-    background: linear-gradient(90deg,#53f 24%,#5533ff 1%,#4c44ff 80%,#3f60ff 99%) !important;
+    background: linear-gradient(90deg,#5533ff 24%,#5533ff 1%,#4c44ff 80%,#3f60ff 99%) !important;
 }
 .bg-stripes5
 {
-    background: linear-gradient(90deg,#53f 24%,#5336ff 1%,#4454ff 80%,#3a6aff 99%) !important;
+    background: linear-gradient(90deg,#5533ff 24%,#5336ff 1%,#4454ff 80%,#3a6aff 99%) !important;
 }
 a.bg-stripes:hover,
 a.bg-stripes:focus,
@@ -15994,7 +15994,7 @@ textarea[resize='horizontal']
 {
     border-color: transparent;
     background-color: #fff;
-    box-shadow: 0 0 0 2px #510fa8;
+    box-shadow: 0 0 0 2px #5533ff;
 }
 
 /* Floating labels */

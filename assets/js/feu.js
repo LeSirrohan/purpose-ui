@@ -1,11 +1,13 @@
 $(document).ready(function($){
-	ventana_ancho = $(window).width();
-    ventana_alto = $(window).height();
+
+    ventana_ancho = $(window).width();
+    ventana_alto  = $(window).height();
     ventana_alto2 = ventana_alto*0.752;
     ventana_alto3 = ventana_alto*1.852;
     ventana_alto4 = ventana_alto*1.552;
     $("a#btn_max").hide();
     $("#btn_min").show();
+
     if(ventana_ancho >= 1010)
     {
         $("#btn_min").hide();
@@ -43,8 +45,7 @@ $(document).ready(function($){
     }
     if(ventana_ancho < 385)
     {       
-        cambios();
-        
+        cambios();        
         $("nav#navbar_main").removeClass("bg-stripes2");
         $("nav#navbar_main").addClass("bg-stripes4");
         $("#seccion2").css("height", ventana_alto);
@@ -54,8 +55,7 @@ $(document).ready(function($){
     {
         if(ventana_ancho >= 385 & ventana_ancho< 415)
         {
-            cambios();
-        
+            cambios();        
             $("nav#navbar_main").removeClass("bg-stripes2");
             $("nav#navbar_main").addClass("bg-stripes4");
             $("#seccion2").css("height", ventana_alto2);
@@ -78,15 +78,24 @@ $(document).ready(function($){
                 console.log("765 1010");
                 cambios();
             }
-            
-           
         }
     }
+    /*
+    $("a#boton1").on("click",function(){
+        alert("Boton1");
+    });
+    $("a#boton2").on("click",function(){
+        alert("Boton2");
+    });
+    $("a#boton3").on("click",function(){
+        alert("Boton3");
+    });*/
     
     $("#seccion2").css("height", ventana_alto2);
     $("#seccion4").css("height", ventana_alto);
     $("#seccion_1").css("height", ventana_alto);
     $("#seccion3").css("height", ventana_alto);
     $("#obligado").css("height", ventana_alto);
-    console.log(ventana_ancho+" "+ventana_alto);
+   // $("#login_form").css("height", ventana_alto);
+    //console.log(ventana_ancho+" "+ventana_alto);
 }); 
