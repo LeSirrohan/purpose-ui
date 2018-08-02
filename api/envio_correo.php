@@ -1,8 +1,8 @@
 <?php
 session_start();
 header("Access-Control-Allow-Origin: *");
-include("clases/class.phpmailer.php");
-include("clases/class.smtp.php");
+include("classes/class.phpmailer.php");
+include("classes/class.smtp.php");
 $firstname = $lastname = $ruc = $telefono = $email = $volume = $website = $country = $info = "";
 $firstname = $_GET['firstname'];
 $lastname  = $_GET['lastname'];

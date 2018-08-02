@@ -542,6 +542,24 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal modal-error fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">           
+                <div class="modal-body">
+                    <div class="py-3 text-center">
+                        <i class="fas fa-exclamation-circle fa-4x"></i>
+                        <h4 class="heading mt-4">
+                            No se pudo enviar el correo electrónico
+                        </h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
 
     <footer class="globalFooter2">
@@ -674,6 +692,54 @@
             $('#pais').hide();
         }
         ocultar();
+        function validar(sw1,sw2,sw3,sw4,sw5,sw6,sw7){
+            if(sw1 == 1)
+            {
+                if(sw2 == 1)
+                {
+                    if(sw3 == 1)
+                    {
+                        if(sw4 == 1)
+                        {
+                            if(sw5 == 1)
+                            {
+                                if(sw6 == 1)
+                                {
+                                    if(sw7 == 1)
+                                    {
+                                        return 1;
+                                    }
+                                }
+                                else
+                                {
+                                    return 0;
+                                }
+                            }
+                            else
+                            {
+                                return 0;
+                            }
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            else
+            {
+                return 0;
+            }
+        }
         $("#contact").on("click",function(){
             event.preventDefault();
             ocultar();
@@ -686,58 +752,54 @@
             volume    = $("#volume").val();
             info      = $("#info").val();
             country   = $("#country").val();
-            console.log(volume);
+            //console.log(volume);
             
             if(firstname == "")
             {
                 $('#modal_1').modal('show');
-                $('#mensaje1').show();
                 $('p#nombre').show();
-
+                sw1 = 0;
             }
             if(lastname == "")
             {
                 $('#modal_1').modal('show');
-                $('#mensaje1').show();
                 $('p#apellido').show();
-
+                sw2 = 0;
             }
             if(ruc == "")
             {
                 $('#modal_1').modal('show');
-                $('#mensaje1').show();
                 $('p#ruc_').show();
-
+                sw3 = 0;
             }
             if(telefono == "")
             {
                 $('#modal_1').modal('show');
-                $('#mensaje1').show();
                 $('p#telef').show();
-
+                sw4 = 0;
             }
             if(email == "")
             {
                 $('#modal_1').modal('show');
-                $('#mensaje1').show();
                 $('p#correo_electronico').show();
-
+                sw5 = 0;
             }
             if(volume == null)
             {
                 $('#modal_1').modal('show');
-                $('#mensaje1').show();
                 $('p#volumen').show();
-
+                sw6 = 0;
             }
             if(country == "")
             {
                 $('#modal_1').modal('show');
-                $('#mensaje1').show();
                 $('p#pais').show();
-
+                sw7 = 0;
             }
-            /*
+            if(validar()){
+                $('#mensaje1').show();
+                //console.log(validar());
+            }            
             else
             {
             //$.get("https://45.55.188.65/selectra_cotizador/envio_correo.php",
@@ -761,10 +823,10 @@
     
                     },
                     error: function (xhr, status) {
-                        $('#modal_1').modal('show');
+                        $('#modal_3').modal('show');
                     }
                 });
-            }*/
+            }
     
     
             });

@@ -503,34 +503,48 @@
                     <div class="row justify-content-center">
                         <div class="col-sm-12 text-center py-4">
                             <h4 class="heading h3">FacturaenUna!</h4> 
-                            <form>
-                                <div class="form-group row">
-                                    <label for="colFormLabelSm" class="col-sm-2 col-form-label">Correo Electrónico</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" size="50" data-culqi="card[email]" class="form-control" id="colFormLabelSm" placeholder="Correo Electrónico">
+                            <form action="" method="POST" id="culqi-card-form">
+                                <div class="row">
+                                    <div class="col-sm-3"><span>Correo electrónico</span></div>
+                                    <div class="col-sm-6">
+                                        <label>                                            
+                                            <input class="form-control" type="text" placeholder="email" size="20" data-culqi="card[email]" id="card[email]">
+                                        </label>
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="colFormLabel" class="col-sm-2 col-form-label">Número de tarjeta</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" size="20" data-culqi="card[number]" class="form-control" id="colFormLabel" placeholder="Número de tarjeta">
+                                <div class="row">
+                                    <div class="col-sm-3"><span>Número de tarjeta</span></div>
+                                    <div class="col-sm-6">
+                                        <label>
+                                            <input class="form-control" type="text" placeholder="number" size="20" data-culqi="card[number]" id="card[number]">
+                                        </label>
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="colFormLabelLg" class="col-sm-2 col-form-label">CVC</label>
-                                    <div class="col-sm-10">
-                                        <input  type="text" size="4" data-culqi="card[cvc]" class="form-control" id="colFormLabelLg" placeholder="col-form-label-lg">
+                                <div class="row">
+                                    <div class="col-sm-3"><span>Código de seguridad</span></div>
+                                    <div class="col-sm-6">
+                                        <label>
+                                            <input class="form-control" type="text" placeholder="cvc" size="20" data-culqi="card[cvc]" id="card[cvc]">
+                                        </label>
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="colFormLabelLg" class="col-sm-2 col-form-label">Fecha expiración (MM/YYYY)</label>
-                                    <div class="col-sm-10">
-                                        <input type="text"  class="form-control" size="2" data-culqi="card[exp_month]">
+                                <div class="row">
+                                        <div class="col-sm-3"><span>Fecha expiración (MM/YYYY)</span></div>
+                                    <div class="col-sm-3">
+                                        <label>
+                                            <input class="form-control" type="text" placeholder="MM" size="2" data-culqi="card[exp_month]" id="card[exp_month]">
+                                        </label>
                                         <span>/</span>
-                                        <input type="text"  class="form-control" size="4" data-culqi="card[exp_year]">                                        
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label>
+                                            <input class="form-control" type="text" placeholder="YYYY" size="4" data-culqi="card[exp_year]" id="card[exp_year]">
+                                        </label>
+                                            
                                     </div>
                                 </div>
                             </form>
+                            <button id="culqi_pay" class="common1-Button21 mr-3">Pagar</button>
                         </div>
                     </div>
                 </div>
@@ -575,7 +589,10 @@
       };
       firebase.initializeApp(config);
     </script>
-    
+    <script>
+            Culqi.createToken();
+        </script>
+        
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
     <script src="./assets/vendor/jquery-validation/jquery.validate.min.js"></script>
     <script src="./assets/vendor/popper/popper.min.js"></script>
@@ -588,6 +605,7 @@
     <script src="./assets/js/theme.min.js"></script>
     <script src="./assets/js/feu.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="https://checkout.culqi.com/js/v3"></script>
 </body>
 
 </html>
